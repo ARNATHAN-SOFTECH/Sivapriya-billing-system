@@ -972,6 +972,9 @@ def patient_details(
     })
 
 
+def home(request):
+    return render(request, "base.html")
+
 # ============================================================
 # BILL DETAIL
 # ============================================================

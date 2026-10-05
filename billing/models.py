@@ -310,7 +310,6 @@ class Doctor(models.Model):
     qualification = models.CharField(max_length=200)
     experience = models.PositiveIntegerField()
     consultation_fee = models.DecimalField(max_digits=8, decimal_places=2)
-    image = models.ImageField(upload_to='doctors/')
     description = models.TextField(blank=True)
     available = models.BooleanField(default=True)
 
