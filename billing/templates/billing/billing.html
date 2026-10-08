@@ -1235,7 +1235,1577 @@ textarea.form-control {
     }
 }
 
+
+
+
+
+/* =========================================================
+   TREATMENT PRINT BILL
+   SIVAPRIYA AYURVEDIC HOSPITAL
+========================================================= */
+
+#treatmentPrintBill {
+
+    display: none;
+
+}
+
+
+/* =========================================================
+   PRINT PAPER
+========================================================= */
+
+#treatmentPrintBill .print-paper {
+
+    width: 100%;
+
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    padding: 35px 45px 25px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    color: #000000;
+
+    font-family:
+        "Times New Roman",
+        Times,
+        serif;
+
+    font-size: 14px;
+
+    line-height: 1.3;
+
+}
+
+
+/* =========================================================
+   HOSPITAL HEADER
+========================================================= */
+
+#treatmentPrintBill .print-hospital-header {
+
+    text-align: left;
+
+    margin-bottom: 43px;
+
+}
+
+
+#treatmentPrintBill .print-hospital-header h1 {
+
+    margin: 0;
+
+    padding: 0;
+
+    font-size: 28px;
+
+    line-height: 1;
+
+    font-weight: 700;
+
+}
+
+
+#treatmentPrintBill .print-hospital-header p {
+
+    margin: 2px 0;
+
+    padding: 0;
+
+    font-size: 14px;
+
+    line-height: 1.25;
+
+    font-weight: 400;
+
+}
+
+
+#treatmentPrintBill .print-hospital-header p:first-of-type {
+
+    font-size: 16px;
+
+}
+
+
+/* =========================================================
+   PATIENT INFORMATION AREA
+========================================================= */
+
+#treatmentPrintBill .print-patient-box {
+
+    width: 100%;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+#treatmentPrintBill .print-patient-grid {
+
+    display: grid;
+
+    grid-template-columns: 1.35fr 0.85fr;
+
+    column-gap: 55px;
+
+    align-items: start;
+
+}
+
+
+#treatmentPrintBill .print-patient-left,
+#treatmentPrintBill .print-patient-right {
+
+    min-width: 0;
+
+}
+
+
+
+
+#treatmentPrintBill .print-field {
+
+    display: flex;
+
+    align-items: baseline;
+
+    width: 100%;
+
+    min-height: 23px;
+
+    margin: 0;
+
+    padding: 0;
+
+    font-size: 14px;
+
+    line-height: 1.45;
+
+}
+
+
+/* LABEL */
+
+#treatmentPrintBill .print-field > span:first-child {
+
+    flex-shrink: 0;
+
+    margin-right: 7px;
+
+    font-weight: 400;
+
+}
+
+
+/* COLON */
+
+#treatmentPrintBill .print-field > span:first-child::after {
+
+    content: ":";
+
+}
+
+
+/* VALUE */
+
+#treatmentPrintBill .print-field > span:last-child {
+
+    font-weight: 700;
+
+}
+
+
+/* =========================================================
+   BILL HEADING
+========================================================= */
+
+#treatmentPrintBill .print-bill-heading {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    margin: 4px 0 18px;
+
+}
+
+
+#treatmentPrintBill .print-bill-heading h2 {
+
+    margin: 0;
+
+    padding: 0;
+
+    font-size: 16px;
+
+    line-height: 1.2;
+
+    font-weight: 700;
+
+    text-transform: capitalize;
+
+    text-decoration: underline;
+
+}
+
+
+
+
+#treatmentPrintBill .print-table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    border-spacing: 0;
+
+    table-layout: fixed;
+
+    margin: 0;
+
+    padding: 0;
+
+    font-size: 14px;
+
+    color: #000000;
+
+}
+
+
+
+
+#treatmentPrintBill .print-table th,
+#treatmentPrintBill .print-table td {
+
+    border: 1px solid #000000;
+
+    color: #000000;
+
+    padding: 5px 6px;
+
+    line-height: 1.25;
+
+}
+
+
+#treatmentPrintBill .print-table th {
+
+    height: 27px;
+
+    text-align: center;
+
+    vertical-align: middle;
+
+    font-weight: 700;
+
+}
+
+
+#treatmentPrintBill .print-table td {
+
+    vertical-align: top;
+
+    font-weight: 400;
+
+}
+
+
+#treatmentPrintBill .print-table th:nth-child(1),
+#treatmentPrintBill .print-table td:nth-child(1) {
+
+    width: 7%;
+
+    text-align: center;
+
+}
+
+
+#treatmentPrintBill .print-table th:nth-child(2),
+#treatmentPrintBill .print-table td:nth-child(2) {
+
+    width: 47%;
+
+    text-align: left;
+
+}
+
+
+#treatmentPrintBill .print-table th:nth-child(3),
+#treatmentPrintBill .print-table td:nth-child(3) {
+
+    width: 15%;
+
+    text-align: right;
+
+}
+
+
+#treatmentPrintBill .print-table th:nth-child(4),
+#treatmentPrintBill .print-table td:nth-child(4) {
+
+    width: 13%;
+
+    text-align: right;
+
+}
+
+
+#treatmentPrintBill .print-table th:nth-child(5),
+#treatmentPrintBill .print-table td:nth-child(5) {
+
+    width: 18%;
+
+    text-align: right;
+
+}
+
+
+
+
+#treatmentPrintBill .print-table tbody {
+
+    height: 430px;
+
+}
+
+
+/* =========================================================
+   TREATMENT ITEM ROWS
+========================================================= */
+
+#treatmentPrintBill .print-table tbody tr {
+
+    height: 28px;
+
+}
+
+
+/* =========================================================
+   TABLE FOOTER / TOTAL
+========================================================= */
+
+#treatmentPrintBill .print-table tfoot td {
+
+    height: 25px;
+
+    padding: 4px 7px;
+
+    vertical-align: middle;
+
+}
+
+
+/* =========================================================
+   TOTAL AMOUNT
+========================================================= */
+
+#treatmentPrintBill .print-table tfoot td:last-child {
+
+    font-weight: 700;
+
+    text-align: right;
+
+}
+
+
+/* =========================================================
+   RIGHT ALIGNMENT
+========================================================= */
+
+#treatmentPrintBill .right {
+
+    text-align: right !important;
+
+}
+
+
+
+
+#treatmentPrintBill .print-total-box {
+
+    display: none !important;
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+#treatmentPrintBill .print-footer {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-end;
+
+    margin-top: 2px;
+
+    padding: 0;
+
+    font-size: 14px;
+
+    line-height: 1.3;
+
+}
+
+
+
+
+#treatmentPrintBill .print-footer > div:first-child {
+
+    font-weight: 400;
+
+}
+
+
+
+
+#treatmentPrintBill .print-signature {
+
+    visibility: hidden;
+
+}
+
+
+/* =========================================================
+   PRINT
+========================================================= */
+
+@media print {
+
+
+    @page {
+
+        size: A4 portrait;
+
+        margin: 10mm;
+
+    }
+
+
+    html,
+    body {
+
+        margin: 0 !important;
+
+        padding: 0 !important;
+
+        background: #ffffff !important;
+
+    }
+
+
+    body * {
+
+        visibility: hidden;
+
+    }
+
+
+    #treatmentPrintBill,
+    #treatmentPrintBill * {
+
+        visibility: visible;
+
+    }
+
+
+    #treatmentPrintBill {
+
+        display: block !important;
+
+        position: absolute;
+
+        left: 0;
+
+        top: 0;
+
+        width: 100%;
+
+        margin: 0;
+
+        padding: 0;
+
+        background: #ffffff;
+
+    }
+
+
+    #treatmentPrintBill .print-paper {
+
+        width: 100%;
+
+        max-width: none;
+
+        margin: 0;
+
+        padding: 20px 28px 18px;
+
+        box-sizing: border-box;
+
+        background: #ffffff;
+
+        color: #000000;
+
+    }
+
+
+    /* Hospital header */
+
+    #treatmentPrintBill .print-hospital-header {
+
+        margin-bottom: 35px;
+
+    }
+
+
+    #treatmentPrintBill .print-hospital-header h1 {
+
+        font-size: 27px;
+
+    }
+
+
+    #treatmentPrintBill .print-hospital-header p {
+
+        font-size: 13px;
+
+    }
+
+
+    #treatmentPrintBill .print-hospital-header p:first-of-type {
+
+        font-size: 15px;
+
+    }
+
+
+    /* Patient information */
+
+    #treatmentPrintBill .print-patient-grid {
+
+        grid-template-columns: 1.35fr 0.85fr;
+
+        column-gap: 55px;
+
+    }
+
+
+    #treatmentPrintBill .print-field {
+
+        font-size: 13px;
+
+        min-height: 22px;
+
+    }
+
+
+    /* Heading */
+
+    #treatmentPrintBill .print-bill-heading {
+
+        margin-top: 4px;
+
+        margin-bottom: 17px;
+
+    }
+
+
+    #treatmentPrintBill .print-bill-heading h2 {
+
+        font-size: 16px;
+
+        font-weight: 700;
+
+    }
+
+
+    /* Table */
+
+    #treatmentPrintBill .print-table {
+
+        font-size: 13px;
+
+        page-break-inside: avoid;
+
+    }
+
+
+    #treatmentPrintBill .print-table th {
+
+        height: 27px;
+
+        font-size: 13px;
+
+        font-weight: 700;
+
+    }
+
+
+    #treatmentPrintBill .print-table th,
+    #treatmentPrintBill .print-table td {
+
+        border: 1px solid #000000;
+
+        padding: 5px 6px;
+
+    }
+
+
+    #treatmentPrintBill .print-table tbody {
+
+        height: 430px;
+
+    }
+
+
+    #treatmentPrintBill .print-table tbody tr {
+
+        height: 28px;
+
+    }
+
+
+    #treatmentPrintBill .print-table tfoot td {
+
+        height: 25px;
+
+    }
+
+
+    /* Footer */
+
+    #treatmentPrintBill .print-footer {
+
+        margin-top: 2px;
+
+        font-size: 13px;
+
+    }
+
+
+    /* Never show the old totals box */
+
+    #treatmentPrintBill .print-total-box {
+
+        display: none !important;
+
+    }
+
+}
+
+
+
+
+#pharmacyPrintBill {
+
+    display: none;
+
+}
+
+
+/* =============================================================
+   PRINT PAPER
+============================================================= */
+
+#pharmacyPrintBill .print-paper {
+
+    width: 100%;
+
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    padding: 25px 35px 20px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    color: #000000;
+
+    font-family:
+        "Times New Roman",
+        Times,
+        serif;
+
+    font-size: 13px;
+
+    line-height: 1.25;
+
+}
+
+
+/* =============================================================
+   HOSPITAL HEADER
+============================================================= */
+
+#pharmacyPrintBill .print-hospital-header {
+
+    text-align: center;
+
+    margin: 0 0 20px 0;
+
+}
+
+
+/* =============================================================
+   HOSPITAL SYMBOL
+============================================================= */
+
+#pharmacyPrintBill .hospital-symbol {
+
+    width: 25px;
+
+    height: 25px;
+
+    margin: 0 auto 4px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 25px;
+
+    line-height: 1;
+
+    color: #444444;
+
+}
+
+
+/* =============================================================
+   HOSPITAL NAME
+============================================================= */
+
+#pharmacyPrintBill .print-hospital-header h1 {
+
+    margin: 0;
+
+    padding: 0;
+
+    font-size: 23px;
+
+    line-height: 1.05;
+
+    font-weight: 700;
+
+    letter-spacing: 0.3px;
+
+    color: #333333;
+
+}
+
+
+/* =============================================================
+   ADDRESS
+============================================================= */
+
+#pharmacyPrintBill .hospital-address {
+
+    margin: 3px 0 0;
+
+    padding: 0;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    color: #333333;
+
+    line-height: 1.2;
+
+}
+
+
+/* =============================================================
+   CONTACT
+============================================================= */
+
+#pharmacyPrintBill .hospital-contact {
+
+    margin: 1px 0 0;
+
+    padding: 0;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    color: #333333;
+
+    line-height: 1.2;
+
+}
+
+
+/* =============================================================
+   BILL HEADING
+============================================================= */
+
+#pharmacyPrintBill .print-bill-heading {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    text-align: center;
+
+    margin: 19px 0 8px;
+
+}
+
+
+/* =============================================================
+   PHARMACY BILL TITLE
+============================================================= */
+
+#pharmacyPrintBill .print-bill-heading h2 {
+
+    margin: 0;
+
+    padding: 0;
+
+    font-size: 13px;
+
+    line-height: 1.2;
+
+    font-weight: 400;
+
+    color: #999999;
+
+    text-transform: uppercase;
+
+}
+
+
+/* =============================================================
+   BILL NUMBER / DATE
+============================================================= */
+
+#pharmacyPrintBill .print-bill-info {
+
+    width: 100%;
+
+    margin: 0 0 1px;
+
+    font-size: 11px;
+
+    line-height: 1.35;
+
+    font-weight: 400;
+
+}
+
+
+#pharmacyPrintBill .print-bill-number,
+#pharmacyPrintBill .print-bill-date {
+
+    display: flex;
+
+    align-items: baseline;
+
+    min-height: 15px;
+
+}
+
+
+/* LABEL */
+
+#pharmacyPrintBill .print-bill-number > span:first-child,
+#pharmacyPrintBill .print-bill-date > span:first-child {
+
+    margin-right: 4px;
+
+}
+
+
+/* VALUE */
+
+#pharmacyPrintBill #printPharmacyBillNo,
+#pharmacyPrintBill #printPharmacyDate {
+
+    font-weight: 700;
+
+}
+
+
+/* =============================================================
+   PATIENT INFORMATION
+============================================================= */
+
+#pharmacyPrintBill .print-patient-box {
+
+    width: 100%;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+/* =============================================================
+   PATIENT GRID
+============================================================= */
+
+#pharmacyPrintBill .print-patient-grid {
+
+    display: block;
+
+    width: 100%;
+
+}
+
+
+/* =============================================================
+   PATIENT NAME
+============================================================= */
+
+#pharmacyPrintBill .print-patient-grid
+.print-field:not(.pharmacy-hidden-field) {
+
+    display: flex;
+
+    align-items: baseline;
+
+    width: 100%;
+
+    min-height: 17px;
+
+    margin: 0;
+
+    padding: 0;
+
+    border-bottom: 2px dotted #555555;
+
+    font-size: 11px;
+
+}
+
+
+/* =============================================================
+   NAME LABEL
+============================================================= */
+
+#pharmacyPrintBill .print-patient-grid
+.print-field:not(.pharmacy-hidden-field)
+> span:first-child {
+
+    flex-shrink: 0;
+
+    margin-right: 7px;
+
+    font-weight: 700;
+
+    font-size: 11px;
+
+}
+
+
+/* =============================================================
+   NAME VALUE
+============================================================= */
+
+#pharmacyPrintBill #printPharmacyName {
+
+    font-weight: 700;
+
+    font-size: 11px;
+
+}
+
+
+
+#pharmacyPrintBill .pharmacy-hidden-field {
+
+    display: none !important;
+
+}
+
+
+/* =============================================================
+   PHARMACY TABLE
+============================================================= */
+
+#pharmacyPrintBill .print-table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    border-spacing: 0;
+
+    table-layout: fixed;
+
+    margin: 0;
+
+    padding: 0;
+
+    font-size: 11px;
+
+    color: #000000;
+
+}
+
+
+/* =============================================================
+   TABLE CELLS
+============================================================= */
+
+#pharmacyPrintBill .print-table th,
+#pharmacyPrintBill .print-table td {
+
+    border: 1px solid #555555;
+
+    color: #000000;
+
+    padding: 4px 6px;
+
+    line-height: 1.15;
+
+}
+
+
+/* =============================================================
+   TABLE HEADER
+============================================================= */
+
+#pharmacyPrintBill .print-table th {
+
+    height: 22px;
+
+    text-align: left;
+
+    vertical-align: middle;
+
+    font-weight: 700;
+
+}
+
+
+/* =============================================================
+   TABLE BODY
+============================================================= */
+
+#pharmacyPrintBill .print-table td {
+
+    vertical-align: top;
+
+    font-weight: 400;
+
+}
+
+
+
+
+
+/* Sl No */
+
+#pharmacyPrintBill .print-table th:nth-child(1),
+#pharmacyPrintBill .print-table td:nth-child(1) {
+
+    width: 10%;
+
+}
+
+
+/* Particulars */
+
+#pharmacyPrintBill .print-table th:nth-child(2),
+#pharmacyPrintBill .print-table td:nth-child(2) {
+
+    width: 45%;
+
+}
+
+
+/* Qty */
+
+#pharmacyPrintBill .print-table th:nth-child(3),
+#pharmacyPrintBill .print-table td:nth-child(3) {
+
+    width: 12%;
+
+}
+
+
+/* Rate */
+
+#pharmacyPrintBill .print-table th:nth-child(4),
+#pharmacyPrintBill .print-table td:nth-child(4) {
+
+    width: 16%;
+
+}
+
+
+/* Rs. */
+
+#pharmacyPrintBill .print-table th:nth-child(5),
+#pharmacyPrintBill .print-table td:nth-child(5) {
+
+    width: 17%;
+
+}
+
+
+/* =============================================================
+   TABLE ALIGNMENT
+============================================================= */
+
+#pharmacyPrintBill .print-table th:nth-child(1),
+#pharmacyPrintBill .print-table td:nth-child(1) {
+
+    text-align: left;
+
+}
+
+
+#pharmacyPrintBill .print-table th:nth-child(2),
+#pharmacyPrintBill .print-table td:nth-child(2) {
+
+    text-align: left;
+
+}
+
+
+#pharmacyPrintBill .print-table th:nth-child(3),
+#pharmacyPrintBill .print-table td:nth-child(3) {
+
+    text-align: center;
+
+}
+
+
+#pharmacyPrintBill .print-table th:nth-child(4),
+#pharmacyPrintBill .print-table td:nth-child(4) {
+
+    text-align: right;
+
+}
+
+
+#pharmacyPrintBill .print-table th:nth-child(5),
+#pharmacyPrintBill .print-table td:nth-child(5) {
+
+    text-align: right;
+
+}
+
+
+/* =============================================================
+   LARGE EMPTY TABLE AREA
+============================================================= */
+
+#pharmacyPrintBill .print-table tbody {
+
+    height: 270px;
+
+}
+
+
+/* =============================================================
+   ITEM ROW
+============================================================= */
+
+#pharmacyPrintBill .print-table tbody tr {
+
+    height: 18px;
+
+}
+
+
+/* =============================================================
+   TABLE FOOTER
+============================================================= */
+
+#pharmacyPrintBill .print-table tfoot td {
+
+    height: 28px;
+
+    padding: 4px 6px;
+
+    vertical-align: middle;
+
+}
+
+
+/* =============================================================
+   TOTAL LABEL
+============================================================= */
+
+#pharmacyPrintBill .print-table .total-label {
+
+    text-align: right;
+
+    font-weight: 700;
+
+}
+
+
+/* =============================================================
+   TOTAL AMOUNT
+============================================================= */
+
+#pharmacyPrintBill .print-table .total-amount {
+
+    text-align: right;
+
+    font-weight: 700;
+
+}
+
+
+#pharmacyPrintBill .print-total-box {
+
+    display: none !important;
+
+}
+
+
+/* =============================================================
+   FOOTER
+============================================================= */
+
+#pharmacyPrintBill .print-footer {
+
+    position: relative;
+
+    width: 100%;
+
+    min-height: 24px;
+
+    margin-top: 0;
+
+    padding: 0;
+
+    font-size: 11px;
+
+    line-height: 1.25;
+
+}
+
+
+/* =============================================================
+   FOOTER RIGHT
+============================================================= */
+
+#pharmacyPrintBill .footer-right {
+
+    position: absolute;
+
+    right: 0;
+
+    top: 2px;
+
+    font-weight: 700;
+
+}
+
+
+/* =============================================================
+   SIGNATURE
+   Hidden but class retained.
+============================================================= */
+
+#pharmacyPrintBill .print-signature {
+
+    display: none;
+
+}
+
+
+/* =============================================================
+   PRINT ONLY
+============================================================= */
+
+@media print {
+
+
+    @page {
+
+        size: A4 portrait;
+
+        margin: 10mm;
+
+    }
+
+
+    html,
+    body {
+
+        margin: 0 !important;
+
+        padding: 0 !important;
+
+        background: #ffffff !important;
+
+    }
+
+
+    body * {
+
+        visibility: hidden;
+
+    }
+
+
+    #pharmacyPrintBill,
+    #pharmacyPrintBill * {
+
+        visibility: visible;
+
+    }
+
+
+    #pharmacyPrintBill {
+
+        display: block !important;
+
+        position: absolute;
+
+        left: 0;
+
+        top: 0;
+
+        width: 100%;
+
+        margin: 0;
+
+        padding: 0;
+
+        background: #ffffff;
+
+    }
+
+
+    #pharmacyPrintBill .print-paper {
+
+        width: 100%;
+
+        max-width: none;
+
+        margin: 0;
+
+        padding: 18px 20px 15px;
+
+        box-sizing: border-box;
+
+        background: #ffffff;
+
+    }
+
+
+    /* Header */
+
+    #pharmacyPrintBill .print-hospital-header {
+
+        margin-bottom: 15px;
+
+    }
+
+
+    #pharmacyPrintBill .hospital-symbol {
+
+        font-size: 22px;
+
+        width: 22px;
+
+        height: 22px;
+
+        margin-bottom: 2px;
+
+    }
+
+
+    #pharmacyPrintBill .print-hospital-header h1 {
+
+        font-size: 21px;
+
+        letter-spacing: 0.2px;
+
+    }
+
+
+    #pharmacyPrintBill .hospital-address {
+
+        font-size: 8px;
+
+    }
+
+
+    #pharmacyPrintBill .hospital-contact {
+
+        font-size: 8px;
+
+    }
+
+
+    /* Heading */
+
+    #pharmacyPrintBill .print-bill-heading {
+
+        margin-top: 15px;
+
+        margin-bottom: 6px;
+
+    }
+
+
+    #pharmacyPrintBill .print-bill-heading h2 {
+
+        font-size: 12px;
+
+    }
+
+
+    /* Bill information */
+
+    #pharmacyPrintBill .print-bill-info {
+
+        font-size: 10px;
+
+    }
+
+
+    /* Patient */
+
+    #pharmacyPrintBill .print-patient-grid
+    .print-field:not(.pharmacy-hidden-field) {
+
+        font-size: 10px;
+
+        min-height: 15px;
+
+    }
+
+
+    #pharmacyPrintBill .print-patient-grid
+    .print-field:not(.pharmacy-hidden-field)
+    > span:first-child {
+
+        font-size: 10px;
+
+    }
+
+
+    #pharmacyPrintBill #printPharmacyName {
+
+        font-size: 10px;
+
+    }
+
+
+    /* Table */
+
+    #pharmacyPrintBill .print-table {
+
+        font-size: 10px;
+
+        page-break-inside: avoid;
+
+    }
+
+
+    #pharmacyPrintBill .print-table th,
+    #pharmacyPrintBill .print-table td {
+
+        border: 1px solid #555555;
+
+        padding: 3px 5px;
+
+    }
+
+
+    #pharmacyPrintBill .print-table th {
+
+        height: 20px;
+
+        font-size: 10px;
+
+        font-weight: 700;
+
+    }
+
+
+    #pharmacyPrintBill .print-table tbody {
+
+        height: 265px;
+
+    }
+
+
+    #pharmacyPrintBill .print-table tbody tr {
+
+        height: 17px;
+
+    }
+
+
+    #pharmacyPrintBill .print-table tfoot td {
+
+        height: 27px;
+
+    }
+
+
+    /* Footer */
+
+    #pharmacyPrintBill .print-footer {
+
+        font-size: 10px;
+
+        min-height: 22px;
+
+    }
+
+
+    #pharmacyPrintBill .footer-right {
+
+        top: 2px;
+
+    }
+
+
+    
+
+    #pharmacyPrintBill .print-total-box {
+
+        display: none !important;
+
+    }
+
+}
+
 </style>
+
+
+
+
+
 
 
 <!-- =========================================================
@@ -2526,10 +4096,6 @@ textarea.form-control {
 </div>
 
 
-<!-- =============================================================
-     TREATMENT PRINT BILL
-============================================================== -->
-
 <div
     id="treatmentPrintBill"
     class="print-bill"
@@ -2538,164 +4104,206 @@ textarea.form-control {
     <div class="print-paper">
 
 
+        <!-- =========================================================
+             HOSPITAL HEADER
+        ========================================================== -->
+
         <div class="print-hospital-header">
 
             <h1>
-                Sivapriya Ayurvedic Hospital
+                Sivapriya
             </h1>
 
             <p>
-                Ayurvedic Healthcare Management
+                Ayurvedic Hospital
+            </p>
+
+            <p>
+                Karamcode P.O. Kollam
+            </p>
+
+            <p>
+                <u>Phone:+919447647612</u>
             </p>
 
         </div>
 
 
-        <div class="print-bill-heading">
-
-            <h2>
-                TREATMENT BILL
-            </h2>
-
-            <div class="print-bill-number">
-
-                Bill Date:
-                <span id="printTreatmentDate">
-                    -
-                </span>
-
-            </div>
-
-        </div>
-
+        <!-- =========================================================
+             PATIENT / BILL INFORMATION
+        ========================================================== -->
 
         <div class="print-patient-box">
 
             <div class="print-patient-grid">
 
-                
+
+                <!-- =================================================
+                     LEFT SIDE
+                ================================================== -->
+
+                <div class="print-patient-left">
 
 
-                <div class="print-field">
+                    <div class="print-field">
 
-                    <span>
-                        Name:
-                    </span>
+                        <span>
+                            Name
+                        </span>
 
-                    <span id="printTreatmentName">
+                        <span id="printTreatmentName">
+                            -
+                        </span>
+
+                    </div>
+
+
+                    <div class="print-field">
+
+                        <span>
+                            Address
+                        </span>
+
+                        <span id="printTreatmentAddress">
+                            -
+                        </span>
+
+                    </div>
+
+
+                    <div class="print-field">
+
+                        <span>
+                            Bill date
+                        </span>
+
+                        <span id="printTreatmentDate">
+                            -
+                        </span>
+
+                    </div>
+
+
+                    <div class="print-field">
+
+                        <span>
+                            Consulting doctor
+                        </span>
+
+                        <span id="printTreatmentDoctor">
+                            -
+                        </span>
+
+                    </div>
+
+
+                    
+
+                    <span
+                        id="printTreatmentPhone"
+                        style="display:none;"
+                    >
                         -
                     </span>
+
+
+                   
+
+                    <span
+                        id="printTreatmentAgeGender"
+                        style="display:none;"
+                    >
+                        -
+                    </span>
+
 
                 </div>
 
 
-                <div class="print-field">
+                <!-- =================================================
+                     RIGHT SIDE
+                ================================================== -->
 
-                    <span>
-                        O.P.No
-                    </span>
-
-                    <span id="printTreatmentOp">
-                        -
-                    </span>
-
-                </div>
-                <div class="print-field">
-
-                    <span>
-                        O.P.No
-                    </span>
-
-                    <span id="printTreatmentOp">
-                        -
-                    </span>
-
-                </div>
-                <div class="print-field">
-
-                    <span>
-                        O.P.No
-                    </span>
-
-                    <span id="printTreatmentOp">
-                        -
-                    </span>
-
-                </div>
-
-                <div class="print-field">
-
-                    <span>
-                        O.P.No
-                    </span>
-
-                    <span id="printTreatmentOp">
-                        -
-                    </span>
-
-                </div>
+                <div class="print-patient-right">
 
 
-                <div class="print-field">
+                    <div class="print-field">
 
-                    <span>
-                        O.P.No
-                    </span>
+                        <span>
+                            O.P.No
+                        </span>
 
-                    <span id="printTreatmentOp">
-                        -
-                    </span>
+                        <span id="printTreatmentOp">
+                            -
+                        </span>
 
-                </div>
-
-
-                <div class="print-field">
-
-                    <span>
-                        O.P.No
-                    </span>
-
-                    <span id="printTreatmentOp">
-                        -
-                    </span>
-
-                </div>
-
-                <div class="print-field">
-
-                    <span>
-                        O.P.No
-                    </span>
-
-                    <span id="printTreatmentOp">
-                        -
-                    </span>
-
-                </div>
+                    </div>
 
 
-                <div class="print-field">
+                    <div class="print-field">
 
-                    <span>
-                        Age / Gender:
-                    </span>
+                        <span>
+                            I.P.No
+                        </span>
 
-                    <span id="printTreatmentAgeGender">
-                        -
-                    </span>
+                        <span id="printTreatmentIp">
+                            -
+                        </span>
 
-                </div>
+                    </div>
 
 
-                <div class="print-field">
+                    <div class="print-field">
 
-                    <span>
-                        Phone:
-                    </span>
+                        <span>
+                            Room No
+                        </span>
 
-                    <span id="printTreatmentPhone">
-                        -
-                    </span>
+                        <span id="printTreatmentRoom">
+                            -
+                        </span>
+
+                    </div>
+
+
+                    <div class="print-field">
+
+                        <span>
+                            DOA
+                        </span>
+
+                        <span id="printTreatmentDOA">
+                            -
+                        </span>
+
+                    </div>
+
+
+                    <div class="print-field">
+
+                        <span>
+                            DOD
+                        </span>
+
+                        <span id="printTreatmentDOD">
+                            -
+                        </span>
+
+                    </div>
+
+
+                    <div class="print-field">
+
+                        <span>
+                            Bill No.
+                        </span>
+
+                        <span id="printTreatmentBillNo">
+                            -
+                        </span>
+
+                    </div>
+
 
                 </div>
 
@@ -2703,6 +4311,23 @@ textarea.form-control {
 
         </div>
 
+
+        <!-- =========================================================
+             TREATMENT BILL HEADING
+        ========================================================== -->
+
+        <div class="print-bill-heading">
+
+            <h2>
+                Treatment Bill
+            </h2>
+
+        </div>
+
+
+        <!-- =========================================================
+             TREATMENT TABLE
+        ========================================================== -->
 
         <table class="print-table">
 
@@ -2711,22 +4336,22 @@ textarea.form-control {
                 <tr>
 
                     <th>
-                        No.
+                        Sl.No
                     </th>
 
                     <th>
-                        Treatment
+                        Particulars
                     </th>
 
-                    <th class="right">
-                        Qty
+                    <th>
+                        Rate
                     </th>
 
-                    <th class="right">
-                        Unit Price
+                    <th>
+                        Unit
                     </th>
 
-                    <th class="right">
+                    <th>
                         Amount
                     </th>
 
@@ -2734,14 +4359,48 @@ textarea.form-control {
 
             </thead>
 
+
             <tbody id="printTreatmentItems">
 
+                <!--
+                    Treatment items are inserted here by JavaScript.
+                -->
+
             </tbody>
+
+
+            <tfoot>
+
+                <tr>
+
+                    <td colspan="4"></td>
+
+                    <td class="right">
+
+                        <strong>
+                            <span>
+                                ₹
+                            </span>
+
+                            <span id="printTreatmentTotal">
+                                0.00
+                            </span>
+
+                        </strong>
+
+                    </td>
+
+                </tr>
+
+            </tfoot>
 
         </table>
 
 
+        
+
         <div class="print-total-box">
+
 
             <div class="print-total-row grand">
 
@@ -2750,7 +4409,7 @@ textarea.form-control {
                 </span>
 
                 <strong>
-                    ₹<span id="printTreatmentTotal">
+                    ₹<span id="printTreatmentTotalHidden">
                         0.00
                     </span>
                 </strong>
@@ -2787,17 +4446,20 @@ textarea.form-control {
 
             </div>
 
+
         </div>
 
+
+        <!-- =========================================================
+             FOOTER
+        ========================================================== -->
 
         <div class="print-footer">
 
             <div>
-
-                Thank you for choosing
-                Sivapriya Ayurvedic Hospital.
-
+                For&nbsp; Sivapriya
             </div>
+
 
             <div class="print-signature">
 
@@ -2807,13 +4469,18 @@ textarea.form-control {
 
         </div>
 
+
     </div>
 
 </div>
 
 
+
+
+
 <!-- =============================================================
      PHARMACY PRINT BILL
+     SIVAPRIYA AYURVEDIC HOSPITAL
 ============================================================== -->
 
 <div
@@ -2824,18 +4491,35 @@ textarea.form-control {
     <div class="print-paper">
 
 
+        <!-- =====================================================
+             HOSPITAL HEADER
+        ====================================================== -->
+
         <div class="print-hospital-header">
 
+            <!-- Hospital emblem / symbol -->
+            <div class="hospital-symbol">
+                ✤
+            </div>
+
             <h1>
-                Sivapriya Ayurvedic Hospital
+                SIVAPRIYA AYURVEDIC HOSPITAL
             </h1>
 
-            <p>
-                Ayurvedic Healthcare Management
+            <p class="hospital-address">
+                KARAMCODE P.O, CHATHANNOOR, KOLLAM - 691579, KERALA, INDIA
+            </p>
+
+            <p class="hospital-contact">
+                Phone: 0474-2495515 | Mob: 9447647612
             </p>
 
         </div>
 
+
+        <!-- =====================================================
+             BILL HEADING
+        ====================================================== -->
 
         <div class="print-bill-heading">
 
@@ -2843,9 +4527,34 @@ textarea.form-control {
                 PHARMACY BILL
             </h2>
 
+        </div>
+
+
+        <!-- =====================================================
+             BILL NUMBER / DATE
+        ====================================================== -->
+
+        <div class="print-bill-info">
+
             <div class="print-bill-number">
 
-                Bill Date:
+                <span>
+                    Bill No:
+                </span>
+
+                <span id="printPharmacyBillNo">
+                    -
+                </span>
+
+            </div>
+
+
+            <div class="print-bill-date">
+
+                <span>
+                    Date:
+                </span>
+
                 <span id="printPharmacyDate">
                     -
                 </span>
@@ -2855,27 +4564,21 @@ textarea.form-control {
         </div>
 
 
+        <!-- =====================================================
+             PATIENT INFORMATION
+        ====================================================== -->
+
         <div class="print-patient-box">
 
             <div class="print-patient-grid">
 
-                <div class="print-field">
 
-                    <span>
-                        OP Number:
-                    </span>
-
-                    <span id="printPharmacyOp">
-                        -
-                    </span>
-
-                </div>
-
+                <!-- PATIENT NAME -->
 
                 <div class="print-field">
 
                     <span>
-                        Patient Name:
+                        NAME
                     </span>
 
                     <span id="printPharmacyName">
@@ -2885,10 +4588,27 @@ textarea.form-control {
                 </div>
 
 
-                <div class="print-field">
+               
+
+                <div class="print-field pharmacy-hidden-field">
 
                     <span>
-                        Age / Gender:
+                        OP Number
+                    </span>
+
+                    <span id="printPharmacyOp">
+                        -
+                    </span>
+
+                </div>
+
+
+                
+
+                <div class="print-field pharmacy-hidden-field">
+
+                    <span>
+                        Age / Gender
                     </span>
 
                     <span id="printPharmacyAgeGender">
@@ -2898,10 +4618,12 @@ textarea.form-control {
                 </div>
 
 
-                <div class="print-field">
+                
+
+                <div class="print-field pharmacy-hidden-field">
 
                     <span>
-                        Phone:
+                        Phone
                     </span>
 
                     <span id="printPharmacyPhone">
@@ -2915,6 +4637,10 @@ textarea.form-control {
         </div>
 
 
+        <!-- =====================================================
+             PHARMACY TABLE
+        ====================================================== -->
+
         <table class="print-table">
 
             <thead>
@@ -2922,37 +4648,81 @@ textarea.form-control {
                 <tr>
 
                     <th>
-                        No.
+                        Sl No
                     </th>
 
                     <th>
-                        Medicine
+                        Particulars
                     </th>
 
-                    <th class="right">
+                    <th>
                         Qty
                     </th>
 
-                    <th class="right">
-                        Unit Price
+                    <th>
+                        Rate
                     </th>
 
-                    <th class="right">
-                        Amount
+                    <th>
+                        Rs.
                     </th>
 
                 </tr>
 
             </thead>
 
+
             <tbody id="printPharmacyItems">
 
+               
+
             </tbody>
+
+
+            <!-- =================================================
+                 TABLE TOTAL
+            ================================================== -->
+
+            <tfoot>
+
+                <tr>
+
+                    <td
+                        colspan="2"
+                        class="total-label"
+                    >
+                        Total
+                    </td>
+
+
+                    <td></td>
+
+
+                    <td></td>
+
+
+                    <td class="total-amount">
+
+                        <strong>
+
+                            <span id="printPharmacyTotal">
+                                0.00
+                            </span>
+
+                        </strong>
+
+                    </td>
+
+                </tr>
+
+            </tfoot>
 
         </table>
 
 
+      
         <div class="print-total-box">
+
 
             <div class="print-total-row grand">
 
@@ -2961,9 +4731,11 @@ textarea.form-control {
                 </span>
 
                 <strong>
-                    ₹<span id="printPharmacyTotal">
+
+                    ₹<span id="printPharmacyTotalHidden">
                         0.00
                     </span>
+
                 </strong>
 
             </div>
@@ -2976,6 +4748,7 @@ textarea.form-control {
                 </span>
 
                 <strong>
+
                     ₹<span id="printPharmacyPaid">
                         0.00
                     </span>
@@ -2992,6 +4765,7 @@ textarea.form-control {
                 </span>
 
                 <strong>
+
                     ₹<span id="printPharmacyBalance">
                         0.00
                     </span>
@@ -3003,14 +4777,26 @@ textarea.form-control {
         </div>
 
 
+        <!-- =====================================================
+             FOOTER
+        ====================================================== -->
+
         <div class="print-footer">
 
-            <div>
+            <div class="footer-left">
 
-                Thank you for choosing
-                Sivapriya Ayurvedic Hospital.
+                <!-- Kept for compatibility -->
+                &nbsp;
 
             </div>
+
+
+            <div class="footer-right">
+
+                For Sivapriya Ayurvedic Hospital
+
+            </div>
+
 
             <div class="print-signature">
 
@@ -3020,9 +4806,12 @@ textarea.form-control {
 
         </div>
 
+
     </div>
 
 </div>
+
+
 
 
 <script>
@@ -3075,7 +4864,6 @@ document.addEventListener(
             document.getElementById(
                 "patientInfo"
             );
-
 
         const newPatientName =
             document.getElementById(
@@ -3196,181 +4984,202 @@ document.addEventListener(
            PATIENT MODE EVENTS
         ===================================================== */
 
-        existingRadio.addEventListener(
-            "change",
-            function () {
+        if (existingRadio) {
 
-                if (this.checked) {
+            existingRadio.addEventListener(
+                "change",
+                function () {
+
+                    if (this.checked) {
+
+                        showExistingPatient();
+
+                    }
+
+                }
+            );
+
+        }
+
+
+        if (newRadio) {
+
+            newRadio.addEventListener(
+                "change",
+                function () {
+
+                    if (this.checked) {
+
+                        showNewPatient();
+
+                    }
+
+                }
+            );
+
+        }
+
+
+        if (existingMode) {
+
+            existingMode.addEventListener(
+                "click",
+                function (event) {
+
+                    if (
+                        event.target !==
+                        existingRadio
+                    ) {
+
+                        existingRadio.checked =
+                            true;
+
+                    }
 
                     showExistingPatient();
 
                 }
+            );
 
-            }
-        );
+        }
 
 
-        newRadio.addEventListener(
-            "change",
-            function () {
+        if (newMode) {
 
-                if (this.checked) {
+            newMode.addEventListener(
+                "click",
+                function (event) {
+
+                    if (
+                        event.target !==
+                        newRadio
+                    ) {
+
+                        newRadio.checked =
+                            true;
+
+                    }
 
                     showNewPatient();
 
                 }
+            );
 
-            }
-        );
-
-
-        existingMode.addEventListener(
-            "click",
-            function (event) {
-
-                if (
-                    event.target !==
-                    existingRadio
-                ) {
-
-                    existingRadio.checked =
-                        true;
-
-                }
-
-                showExistingPatient();
-
-            }
-        );
-
-
-        newMode.addEventListener(
-            "click",
-            function (event) {
-
-                if (
-                    event.target !==
-                    newRadio
-                ) {
-
-                    newRadio.checked =
-                        true;
-
-                }
-
-                showNewPatient();
-
-            }
-        );
+        }
 
 
         /* =====================================================
            LOAD EXISTING PATIENT
         ===================================================== */
 
-        patientSelect.addEventListener(
-            "change",
-            function () {
+        if (patientSelect) {
 
-                const patientId =
-                    this.value;
+            patientSelect.addEventListener(
+                "change",
+                function () {
 
-
-                document.getElementById(
-                    "treatmentExistingPatient"
-                ).value =
-                    patientId;
-
-                document.getElementById(
-                    "pharmacyExistingPatient"
-                ).value =
-                    patientId;
+                    const patientId =
+                        this.value;
 
 
-                if (!patientId) {
+                    document.getElementById(
+                        "treatmentExistingPatient"
+                    ).value =
+                        patientId;
 
-                    clearPatientInfo();
-
-                    return;
-                }
-
-
-                fetch(
-                    `/billing/patient/${patientId}/`
-                )
-
-                .then(
-                    function (response) {
-
-                        if (!response.ok) {
-
-                            throw new Error(
-                                "Unable to load patient."
-                            );
-
-                        }
-
-                        return response.json();
-
-                    }
-                )
-
-                .then(
-                    function (data) {
-
-                        document.getElementById(
-                            "displayOpNumber"
-                        ).textContent =
-                            data.op_number || "-";
+                    document.getElementById(
+                        "pharmacyExistingPatient"
+                    ).value =
+                        patientId;
 
 
-                        document.getElementById(
-                            "displayName"
-                        ).textContent =
-                            data.name || "-";
-
-
-                        document.getElementById(
-                            "displayAgeGender"
-                        ).textContent =
-                            `${data.age || "-"} / ${data.gender || "-"}`;
-
-
-                        document.getElementById(
-                            "displayPhone"
-                        ).textContent =
-                            data.phone || "-";
-
-
-                        patientInfo.style.display =
-                            "grid";
-
-
-                        syncPrintPatient(
-                            data
-                        );
-
-                    }
-                )
-
-                .catch(
-                    function (error) {
-
-                        console.error(
-                            error
-                        );
-
-                        alert(
-                            "Unable to load patient details."
-                        );
+                    if (!patientId) {
 
                         clearPatientInfo();
 
-                    }
-                );
+                        return;
 
-            }
-        );
+                    }
+
+
+                    fetch(
+                        `/billing/patient/${patientId}/`
+                    )
+
+                    .then(
+                        function (response) {
+
+                            if (!response.ok) {
+
+                                throw new Error(
+                                    "Unable to load patient."
+                                );
+
+                            }
+
+                            return response.json();
+
+                        }
+                    )
+
+                    .then(
+                        function (data) {
+
+                            document.getElementById(
+                                "displayOpNumber"
+                            ).textContent =
+                                data.op_number || "-";
+
+
+                            document.getElementById(
+                                "displayName"
+                            ).textContent =
+                                data.name || "-";
+
+
+                            document.getElementById(
+                                "displayAgeGender"
+                            ).textContent =
+                                `${data.age || "-"} / ${data.gender || "-"}`;
+
+
+                            document.getElementById(
+                                "displayPhone"
+                            ).textContent =
+                                data.phone || "-";
+
+
+                            patientInfo.style.display =
+                                "grid";
+
+
+                            syncPrintPatient(
+                                data
+                            );
+
+                        }
+                    )
+
+                    .catch(
+                        function (error) {
+
+                            console.error(
+                                error
+                            );
+
+                            alert(
+                                "Unable to load patient details."
+                            );
+
+                            clearPatientInfo();
+
+                        }
+                    );
+
+                }
+            );
+
+        }
 
 
         /* =====================================================
@@ -3470,7 +5279,10 @@ document.addEventListener(
                     newPatientGender.value,
 
                 phone:
-                    newPatientPhone.value
+                    newPatientPhone.value,
+
+                address:
+                    newPatientAddress.value
 
             });
 
@@ -3485,6 +5297,10 @@ document.addEventListener(
             newPatientAddress
         ].forEach(
             function (element) {
+
+                if (!element) {
+                    return;
+                }
 
                 element.addEventListener(
                     "input",
@@ -3501,51 +5317,140 @@ document.addEventListener(
 
 
         /* =====================================================
-           PRINT PATIENT INFORMATION
+           SYNC PATIENT DATA TO PRINT BILLS
         ===================================================== */
 
         function syncPrintPatient(data) {
 
-            document.getElementById(
-                "printTreatmentOp"
-            ).textContent =
-                data.op_number || "-";
+            /* -------------------------
+               Treatment Bill
+            ------------------------- */
 
-            document.getElementById(
-                "printTreatmentName"
-            ).textContent =
-                data.name || "-";
+            const treatmentOp =
+                document.getElementById(
+                    "printTreatmentOp"
+                );
 
-            document.getElementById(
-                "printTreatmentAgeGender"
-            ).textContent =
-                `${data.age || "-"} / ${data.gender || "-"}`;
+            const treatmentName =
+                document.getElementById(
+                    "printTreatmentName"
+                );
 
-            document.getElementById(
-                "printTreatmentPhone"
-            ).textContent =
-                data.phone || "-";
+            const treatmentAgeGender =
+                document.getElementById(
+                    "printTreatmentAgeGender"
+                );
+
+            const treatmentPhone =
+                document.getElementById(
+                    "printTreatmentPhone"
+                );
 
 
-            document.getElementById(
-                "printPharmacyOp"
-            ).textContent =
-                data.op_number || "-";
+            if (treatmentOp) {
 
-            document.getElementById(
-                "printPharmacyName"
-            ).textContent =
-                data.name || "-";
+                treatmentOp.textContent =
+                    data.op_number || "-";
 
-            document.getElementById(
-                "printPharmacyAgeGender"
-            ).textContent =
-                `${data.age || "-"} / ${data.gender || "-"}`;
+            }
 
-            document.getElementById(
-                "printPharmacyPhone"
-            ).textContent =
-                data.phone || "-";
+
+            if (treatmentName) {
+
+                treatmentName.textContent =
+                    data.name || "-";
+
+            }
+
+
+            if (treatmentAgeGender) {
+
+                treatmentAgeGender.textContent =
+                    `${data.age || "-"} / ${data.gender || "-"}`;
+
+            }
+
+
+            if (treatmentPhone) {
+
+                treatmentPhone.textContent =
+                    data.phone || "-";
+
+            }
+
+
+            /* -------------------------
+               Treatment Address
+            ------------------------- */
+
+            const treatmentAddress =
+                document.getElementById(
+                    "printTreatmentAddress"
+                );
+
+            if (treatmentAddress) {
+
+                treatmentAddress.textContent =
+                    data.address || "-";
+
+            }
+
+
+            /* -------------------------
+               Pharmacy Bill
+            ------------------------- */
+
+            const pharmacyOp =
+                document.getElementById(
+                    "printPharmacyOp"
+                );
+
+            const pharmacyName =
+                document.getElementById(
+                    "printPharmacyName"
+                );
+
+            const pharmacyAgeGender =
+                document.getElementById(
+                    "printPharmacyAgeGender"
+                );
+
+            const pharmacyPhone =
+                document.getElementById(
+                    "printPharmacyPhone"
+                );
+
+
+            if (pharmacyOp) {
+
+                pharmacyOp.textContent =
+                    data.op_number || "-";
+
+            }
+
+
+            if (pharmacyName) {
+
+                pharmacyName.textContent =
+                    data.name || "-";
+
+            }
+
+
+            if (pharmacyAgeGender) {
+
+                pharmacyAgeGender.textContent =
+                    `${data.age || "-"} / ${data.gender || "-"}`;
+
+            }
+
+
+            if (pharmacyPhone) {
+
+                pharmacyPhone.textContent =
+                    data.phone || "-";
+
+            }
 
         }
 
@@ -3594,6 +5499,7 @@ document.addEventListener(
                 select.focus();
 
                 return;
+
             }
 
 
@@ -3633,6 +5539,7 @@ document.addEventListener(
                 quantityInput.focus();
 
                 return;
+
             }
 
 
@@ -3651,12 +5558,20 @@ document.addEventListener(
         }
 
 
-        document.getElementById(
-            "addTreatmentBtn"
-        ).addEventListener(
-            "click",
-            addTreatment
-        );
+        const addTreatmentButton =
+            document.getElementById(
+                "addTreatmentBtn"
+            );
+
+
+        if (addTreatmentButton) {
+
+            addTreatmentButton.addEventListener(
+                "click",
+                addTreatment
+            );
+
+        }
 
 
         function addTreatmentRow(
@@ -3769,7 +5684,9 @@ document.addEventListener(
             );
 
 
-            tbody.appendChild(row);
+            tbody.appendChild(
+                row
+            );
 
 
             calculateTreatmentTotal();
@@ -3826,16 +5743,19 @@ document.addEventListener(
                             row.dataset.price
                         ) || 0;
 
+
                     const quantityInput =
                         row.querySelector(
                             'input[name="treatment_quantity[]"]'
                         );
+
 
                     const quantity =
                         parseInt(
                             quantityInput.value,
                             10
                         ) || 0;
+
 
                     total +=
                         price * quantity;
@@ -3878,15 +5798,24 @@ document.addEventListener(
 
 
             prepareTreatmentPrint();
+
         }
 
 
-        document.getElementById(
-            "treatmentPaidAmount"
-        ).addEventListener(
-            "input",
-            calculateTreatmentTotal
-        );
+        const treatmentPaidAmount =
+            document.getElementById(
+                "treatmentPaidAmount"
+            );
+
+
+        if (treatmentPaidAmount) {
+
+            treatmentPaidAmount.addEventListener(
+                "input",
+                calculateTreatmentTotal
+            );
+
+        }
 
 
         /* =====================================================
@@ -3915,6 +5844,7 @@ document.addEventListener(
                 select.focus();
 
                 return;
+
             }
 
 
@@ -3960,6 +5890,7 @@ document.addEventListener(
                 quantityInput.focus();
 
                 return;
+
             }
 
 
@@ -3970,6 +5901,7 @@ document.addEventListener(
                 );
 
                 return;
+
             }
 
 
@@ -3982,6 +5914,7 @@ document.addEventListener(
                 quantityInput.focus();
 
                 return;
+
             }
 
 
@@ -4001,12 +5934,20 @@ document.addEventListener(
         }
 
 
-        document.getElementById(
-            "addMedicineBtn"
-        ).addEventListener(
-            "click",
-            addMedicine
-        );
+        const addMedicineButton =
+            document.getElementById(
+                "addMedicineBtn"
+            );
+
+
+        if (addMedicineButton) {
+
+            addMedicineButton.addEventListener(
+                "click",
+                addMedicine
+            );
+
+        }
 
 
         function addMedicineRow(
@@ -4123,7 +6064,9 @@ document.addEventListener(
             );
 
 
-            tbody.appendChild(row);
+            tbody.appendChild(
+                row
+            );
 
 
             calculatePharmacyTotal();
@@ -4180,16 +6123,19 @@ document.addEventListener(
                             row.dataset.price
                         ) || 0;
 
+
                     const quantityInput =
                         row.querySelector(
                             'input[name="medicine_quantity[]"]'
                         );
+
 
                     const quantity =
                         parseInt(
                             quantityInput.value,
                             10
                         ) || 0;
+
 
                     total +=
                         price * quantity;
@@ -4236,12 +6182,20 @@ document.addEventListener(
         }
 
 
-        document.getElementById(
-            "pharmacyPaidAmount"
-        ).addEventListener(
-            "input",
-            calculatePharmacyTotal
-        );
+        const pharmacyPaidAmount =
+            document.getElementById(
+                "pharmacyPaidAmount"
+            );
+
+
+        if (pharmacyPaidAmount) {
+
+            pharmacyPaidAmount.addEventListener(
+                "input",
+                calculatePharmacyTotal
+            );
+
+        }
 
 
         /* =====================================================
@@ -4254,6 +6208,11 @@ document.addEventListener(
                 document.getElementById(
                     "printTreatmentItems"
                 );
+
+
+            if (!printItems) {
+                return;
+            }
 
 
             printItems.innerHTML = "";
@@ -4274,16 +6233,19 @@ document.addEventListener(
                         )?.textContent.trim()
                         || "-";
 
+
                     const quantity =
                         row.querySelector(
                             'input[name="treatment_quantity[]"]'
                         )?.value
                         || "0";
 
+
                     const price =
                         parseFloat(
                             row.dataset.price
                         ) || 0;
+
 
                     const amount =
                         price *
@@ -4325,28 +6287,81 @@ document.addEventListener(
             );
 
 
-            document.getElementById(
-                "printTreatmentTotal"
-            ).textContent =
+            const treatmentTotal =
                 document.getElementById(
                     "treatmentGrandTotal"
-                ).textContent;
+                )?.textContent
+                || "0.00";
 
 
-            document.getElementById(
-                "printTreatmentPaid"
-            ).textContent =
+            const treatmentPaid =
                 document.getElementById(
                     "treatmentPaidDisplay"
-                ).textContent;
+                )?.textContent
+                || "0.00";
 
 
-            document.getElementById(
-                "printTreatmentBalance"
-            ).textContent =
+            const treatmentBalance =
                 document.getElementById(
                     "treatmentBalance"
-                ).textContent;
+                )?.textContent
+                || "0.00";
+
+
+            const printTotal =
+                document.getElementById(
+                    "printTreatmentTotal"
+                );
+
+
+            if (printTotal) {
+
+                printTotal.textContent =
+                    treatmentTotal;
+
+            }
+
+
+            const printPaid =
+                document.getElementById(
+                    "printTreatmentPaid"
+                );
+
+
+            if (printPaid) {
+
+                printPaid.textContent =
+                    treatmentPaid;
+
+            }
+
+
+            const printBalance =
+                document.getElementById(
+                    "printTreatmentBalance"
+                );
+
+
+            if (printBalance) {
+
+                printBalance.textContent =
+                    treatmentBalance;
+
+            }
+
+
+            const hiddenTotal =
+                document.getElementById(
+                    "printTreatmentTotalHidden"
+                );
+
+
+            if (hiddenTotal) {
+
+                hiddenTotal.textContent =
+                    treatmentTotal;
+
+            }
 
 
             setPrintDate(
@@ -4368,6 +6383,11 @@ document.addEventListener(
                 );
 
 
+            if (!printItems) {
+                return;
+            }
+
+
             printItems.innerHTML = "";
 
 
@@ -4386,16 +6406,19 @@ document.addEventListener(
                         )?.textContent.trim()
                         || "-";
 
+
                     const quantity =
                         row.querySelector(
                             'input[name="medicine_quantity[]"]'
                         )?.value
                         || "0";
 
+
                     const price =
                         parseFloat(
                             row.dataset.price
                         ) || 0;
+
 
                     const amount =
                         price *
@@ -4437,28 +6460,81 @@ document.addEventListener(
             );
 
 
-            document.getElementById(
-                "printPharmacyTotal"
-            ).textContent =
+            const pharmacyTotal =
                 document.getElementById(
                     "pharmacyGrandTotal"
-                ).textContent;
+                )?.textContent
+                || "0.00";
 
 
-            document.getElementById(
-                "printPharmacyPaid"
-            ).textContent =
+            const pharmacyPaid =
                 document.getElementById(
                     "pharmacyPaidDisplay"
-                ).textContent;
+                )?.textContent
+                || "0.00";
 
 
-            document.getElementById(
-                "printPharmacyBalance"
-            ).textContent =
+            const pharmacyBalance =
                 document.getElementById(
                     "pharmacyBalance"
-                ).textContent;
+                )?.textContent
+                || "0.00";
+
+
+            const printTotal =
+                document.getElementById(
+                    "printPharmacyTotal"
+                );
+
+
+            if (printTotal) {
+
+                printTotal.textContent =
+                    pharmacyTotal;
+
+            }
+
+
+            const hiddenTotal =
+                document.getElementById(
+                    "printPharmacyTotalHidden"
+                );
+
+
+            if (hiddenTotal) {
+
+                hiddenTotal.textContent =
+                    pharmacyTotal;
+
+            }
+
+
+            const printPaid =
+                document.getElementById(
+                    "printPharmacyPaid"
+                );
+
+
+            if (printPaid) {
+
+                printPaid.textContent =
+                    pharmacyPaid;
+
+            }
+
+
+            const printBalance =
+                document.getElementById(
+                    "printPharmacyBalance"
+                );
+
+
+            if (printBalance) {
+
+                printBalance.textContent =
+                    pharmacyBalance;
+
+            }
 
 
             setPrintDate(
@@ -4474,8 +6550,20 @@ document.addEventListener(
 
         function setPrintDate(elementId) {
 
+            const element =
+                document.getElementById(
+                    elementId
+                );
+
+
+            if (!element) {
+                return;
+            }
+
+
             const now =
                 new Date();
+
 
             const date =
                 now.toLocaleDateString(
@@ -4487,17 +6575,82 @@ document.addEventListener(
                     }
                 );
 
-            document.getElementById(
-                elementId
-            ).textContent =
+
+            element.textContent =
                 date;
 
         }
 
 
-        /* =====================================================
-           PRINT ONLY ONE BILL
-        ===================================================== */
+       
+
+        function copyPageStyles(
+            printDocument
+        ) {
+
+            /* -------------------------------------------------
+               Copy <style> elements
+            ------------------------------------------------- */
+
+            document
+                .querySelectorAll(
+                    "style"
+                )
+                .forEach(
+                    function (styleElement) {
+
+                        const newStyle =
+                            printDocument.createElement(
+                                "style"
+                            );
+
+
+                        newStyle.textContent =
+                            styleElement.textContent;
+
+
+                        printDocument.head.appendChild(
+                            newStyle
+                        );
+
+                    }
+                );
+
+
+            
+
+            document
+                .querySelectorAll(
+                    'link[rel="stylesheet"]'
+                )
+                .forEach(
+                    function (linkElement) {
+
+                        const newLink =
+                            printDocument.createElement(
+                                "link"
+                            );
+
+
+                        newLink.rel =
+                            "stylesheet";
+
+
+                        newLink.href =
+                            linkElement.href;
+
+
+                        printDocument.head.appendChild(
+                            newLink
+                        );
+
+                    }
+                );
+
+        }
+
+
+
 
         function printOnlyBill(
             billId
@@ -4511,162 +6664,380 @@ document.addEventListener(
 
             if (!bill) {
 
+                alert(
+                    "Unable to find the selected bill."
+                );
+
                 return;
 
             }
 
 
-            /*
-                Ensure patient data is synchronized
-                before printing.
-            */
+            /* -------------------------------------------------
+               Create a clone
+            ------------------------------------------------- */
 
-            if (
-                newRadio.checked
-            ) {
-
-                syncNewPatientData();
-
-            }
+            const billClone =
+                bill.cloneNode(
+                    true
+                );
 
 
-            bill.classList.add(
+            /* -------------------------------------------------
+               Force bill to be visible
+            ------------------------------------------------- */
+
+            billClone.style.setProperty(
+                "display",
+                "block",
+                "important"
+            );
+
+
+            billClone.style.setProperty(
+                "visibility",
+                "visible",
+                "important"
+            );
+
+
+            billClone.style.setProperty(
+                "position",
+                "static",
+                "important"
+            );
+
+
+            billClone.style.setProperty(
+                "width",
+                "100%",
+                "important"
+            );
+
+
+            /* -------------------------------------------------
+               Remove any previous printing class
+            ------------------------------------------------- */
+
+            billClone.classList.remove(
                 "printing"
             );
 
 
-            window.print();
+            /* -------------------------------------------------
+               Remove scripts from cloned bill
+            ------------------------------------------------- */
+
+            billClone
+                .querySelectorAll(
+                    "script"
+                )
+                .forEach(
+                    function (script) {
+
+                        script.remove();
+
+                    }
+                );
 
 
-            /*
-                Remove the printing class
-                after print dialog closes.
-            */
+            /* -------------------------------------------------
+               Open new print window
+            ------------------------------------------------- */
+
+            const printWindow =
+                window.open(
+                    "",
+                    "_blank",
+                    "width=900,height=700"
+                );
+
+
+            if (!printWindow) {
+
+                alert(
+                    "The print window was blocked. " +
+                    "Please allow pop-ups for this website."
+                );
+
+                return;
+
+            }
+
+
+            /* -------------------------------------------------
+               Create print document
+            ------------------------------------------------- */
+
+            const printDocument =
+                printWindow.document;
+
+
+            printDocument.open();
+
+
+            printDocument.write(`
+                
+                <!DOCTYPE html>
+
+                <html>
+
+                <head>
+
+                    <meta charset="UTF-8">
+
+                    <meta
+                        name="viewport"
+                        content="width=device-width, initial-scale=1.0"
+                    >
+
+                    <title>
+                        Sivapriya Ayurvedic Hospital
+                    </title>
+
+                </head>
+
+                <body>
+
+                </body>
+
+                </html>
+
+            `);
+
+
+            printDocument.close();
+
+
+            /* -------------------------------------------------
+               Copy all current page CSS
+            ------------------------------------------------- */
+
+            copyPageStyles(
+                printDocument
+            );
+
+
+            /* -------------------------------------------------
+               Add selected bill
+            ------------------------------------------------- */
+
+            printDocument.body.appendChild(
+                billClone
+            );
+
+
+            /* -------------------------------------------------
+               Add print-specific CSS
+               
+               This CSS applies ONLY inside the new
+               print window.
+            ------------------------------------------------- */
+
+            const printStyle =
+                printDocument.createElement(
+                    "style"
+                );
+
+
+            printStyle.textContent = `
+
+                @page {
+
+                    size: A4;
+
+                    margin: 10mm;
+
+                }
+
+
+                html,
+                body {
+
+                    margin: 0 !important;
+
+                    padding: 0 !important;
+
+                    width: 100% !important;
+
+                    min-height: 100% !important;
+
+                    background: #ffffff !important;
+
+                    color: #000000 !important;
+
+                }
+
+
+                body {
+
+                    overflow: visible !important;
+
+                }
+
+
+                .print-bill {
+
+                    display: block !important;
+
+                    visibility: visible !important;
+
+                    position: static !important;
+
+                    width: 100% !important;
+
+                    max-width: 100% !important;
+
+                    margin: 0 !important;
+
+                    padding: 0 !important;
+
+                    background: #ffffff !important;
+
+                    color: #000000 !important;
+
+                }
+
+
+                .print-paper {
+
+                    display: block !important;
+
+                    visibility: visible !important;
+
+                    position: static !important;
+
+                    width: 100% !important;
+
+                    max-width: 100% !important;
+
+                    margin: 0 auto !important;
+
+                    background: #ffffff !important;
+
+                    color: #000000 !important;
+
+                }
+
+
+                .print-total-box {
+
+                    display: none !important;
+
+                }
+
+
+                .pharmacy-hidden-field {
+
+                    display: none !important;
+
+                }
+
+
+                @media print {
+
+                    html,
+                    body {
+
+                        width: 100% !important;
+
+                        margin: 0 !important;
+
+                        padding: 0 !important;
+
+                    }
+
+
+                    .print-bill {
+
+                        display: block !important;
+
+                    }
+
+
+                    .print-paper {
+
+                        display: block !important;
+
+                    }
+
+
+                    table {
+
+                        page-break-inside: auto;
+
+                    }
+
+
+                    tr {
+
+                        page-break-inside: avoid !important;
+
+                        break-inside: avoid !important;
+
+                    }
+
+
+                    thead {
+
+                        display: table-header-group;
+
+                    }
+
+
+                    tfoot {
+
+                        display: table-footer-group;
+
+                    }
+
+                }
+
+            `;
+
+
+            printDocument.head.appendChild(
+                printStyle
+            );
+
+
+            /* -------------------------------------------------
+               Wait for CSS to load
+            ------------------------------------------------- */
 
             setTimeout(
                 function () {
 
-                    bill.classList.remove(
-                        "printing"
-                    );
+                    printWindow.focus();
+
+                    printWindow.print();
 
                 },
-                500
+                700
+            );
+
+
+            /* -------------------------------------------------
+               Close print window after printing
+            ------------------------------------------------- */
+
+            printWindow.addEventListener(
+                "afterprint",
+                function () {
+
+                    setTimeout(
+                        function () {
+
+                            printWindow.close();
+
+                        },
+                        300
+                    );
+
+                }
             );
 
         }
-
-
-        /* =====================================================
-           PRINT TREATMENT
-        ===================================================== */
-
-        document.getElementById(
-            "printTreatmentBtn"
-        ).addEventListener(
-            "click",
-            function () {
-
-                const rows =
-                    document.querySelectorAll(
-                        "#treatmentItems tr[data-type]"
-                    );
-
-
-                if (rows.length === 0) {
-
-                    alert(
-                        "Please add at least one treatment before printing."
-                    );
-
-                    return;
-
-                }
-
-
-                const patientValid =
-                    validatePatient();
-
-
-                if (!patientValid) {
-
-                    return;
-
-                }
-
-
-                prepareTreatmentPrint();
-
-
-                document.getElementById(
-                    "treatmentStatus"
-                ).classList.add(
-                    "show"
-                );
-
-
-                printOnlyBill(
-                    "treatmentPrintBill"
-                );
-
-            }
-        );
-
-
-        /* =====================================================
-           PRINT PHARMACY
-        ===================================================== */
-
-        document.getElementById(
-            "printPharmacyBtn"
-        ).addEventListener(
-            "click",
-            function () {
-
-                const rows =
-                    document.querySelectorAll(
-                        "#medicineItems tr[data-type]"
-                    );
-
-
-                if (rows.length === 0) {
-
-                    alert(
-                        "Please add at least one medicine before printing."
-                    );
-
-                    return;
-
-                }
-
-
-                const patientValid =
-                    validatePatient();
-
-
-                if (!patientValid) {
-
-                    return;
-
-                }
-
-
-                preparePharmacyPrint();
-
-
-                document.getElementById(
-                    "pharmacyStatus"
-                ).classList.add(
-                    "show"
-                );
-
-
-                printOnlyBill(
-                    "pharmacyPrintBill"
-                );
-
-            }
-        );
 
 
         /* =====================================================
@@ -4676,16 +7047,24 @@ document.addEventListener(
         function validatePatient() {
 
             if (
+                existingRadio &&
                 existingRadio.checked
             ) {
 
-                if (!patientSelect.value) {
+                if (
+                    !patientSelect ||
+                    !patientSelect.value
+                ) {
 
                     alert(
                         "Please select an OP number / patient."
                     );
 
-                    patientSelect.focus();
+                    if (patientSelect) {
+
+                        patientSelect.focus();
+
+                    }
 
                     return false;
 
@@ -4695,6 +7074,7 @@ document.addEventListener(
 
 
             if (
+                newRadio &&
                 newRadio.checked
             ) {
 
@@ -4712,6 +7092,7 @@ document.addEventListener(
 
                 }
 
+
                 syncNewPatientData();
 
             }
@@ -4723,171 +7104,361 @@ document.addEventListener(
 
 
         /* =====================================================
+           PRINT TREATMENT BUTTON
+        ===================================================== */
+
+        const treatmentPrintButton =
+            document.getElementById(
+                "printTreatmentBtn"
+            );
+
+
+        if (treatmentPrintButton) {
+
+            treatmentPrintButton.addEventListener(
+                "click",
+                function () {
+
+                    const rows =
+                        document.querySelectorAll(
+                            "#treatmentItems tr[data-type]"
+                        );
+
+
+                    if (
+                        rows.length === 0
+                    ) {
+
+                        alert(
+                            "Please add at least one treatment before printing."
+                        );
+
+                        return;
+
+                    }
+
+
+                    if (
+                        !validatePatient()
+                    ) {
+
+                        return;
+
+                    }
+
+
+                    /* -----------------------------------------
+                       Update print bill before opening window
+                    ----------------------------------------- */
+
+                    prepareTreatmentPrint();
+
+
+                    /* -----------------------------------------
+                       Show status if available
+                    ----------------------------------------- */
+
+                    const status =
+                        document.getElementById(
+                            "treatmentStatus"
+                        );
+
+
+                    if (status) {
+
+                        status.classList.add(
+                            "show"
+                        );
+
+                    }
+
+
+                    /* -----------------------------------------
+                       Print ONLY treatment bill
+                    ----------------------------------------- */
+
+                    printOnlyBill(
+                        "treatmentPrintBill"
+                    );
+
+                }
+            );
+
+        }
+
+
+        /* =====================================================
+           PRINT PHARMACY BUTTON
+        ===================================================== */
+
+        const pharmacyPrintButton =
+            document.getElementById(
+                "printPharmacyBtn"
+            );
+
+
+        if (pharmacyPrintButton) {
+
+            pharmacyPrintButton.addEventListener(
+                "click",
+                function () {
+
+                    const rows =
+                        document.querySelectorAll(
+                            "#medicineItems tr[data-type]"
+                        );
+
+
+                    if (
+                        rows.length === 0
+                    ) {
+
+                        alert(
+                            "Please add at least one medicine before printing."
+                        );
+
+                        return;
+
+                    }
+
+
+                    if (
+                        !validatePatient()
+                    ) {
+
+                        return;
+
+                    }
+
+
+                    /* -----------------------------------------
+                       Update print bill before opening window
+                    ----------------------------------------- */
+
+                    preparePharmacyPrint();
+
+
+                    /* -----------------------------------------
+                       Show status if available
+                    ----------------------------------------- */
+
+                    const status =
+                        document.getElementById(
+                            "pharmacyStatus"
+                        );
+
+
+                    if (status) {
+
+                        status.classList.add(
+                            "show"
+                        );
+
+                    }
+
+
+                    /* -----------------------------------------
+                       Print ONLY pharmacy bill
+                    ----------------------------------------- */
+
+                    printOnlyBill(
+                        "pharmacyPrintBill"
+                    );
+
+                }
+            );
+
+        }
+
+
+        /* =====================================================
            TREATMENT FORM SUBMIT
         ===================================================== */
 
-        document.getElementById(
-            "treatmentForm"
-        ).addEventListener(
-            "submit",
-            function (event) {
+        const treatmentForm =
+            document.getElementById(
+                "treatmentForm"
+            );
 
-                if (
-                    !validatePatient()
-                ) {
 
-                    event.preventDefault();
+        if (treatmentForm) {
 
-                    return;
+            treatmentForm.addEventListener(
+                "submit",
+                function (event) {
+
+                    if (
+                        !validatePatient()
+                    ) {
+
+                        event.preventDefault();
+
+                        return;
+
+                    }
+
+
+                    const rows =
+                        document.querySelectorAll(
+                            "#treatmentItems tr[data-type]"
+                        );
+
+
+                    if (
+                        rows.length === 0
+                    ) {
+
+                        event.preventDefault();
+
+                        alert(
+                            "Please add at least one treatment."
+                        );
+
+                        return;
+
+                    }
+
+
+                    const total =
+                        parseFloat(
+                            document.getElementById(
+                                "treatmentGrandTotal"
+                            ).textContent
+                        ) || 0;
+
+
+                    const paid =
+                        parseFloat(
+                            document.getElementById(
+                                "treatmentPaidAmount"
+                            ).value
+                        ) || 0;
+
+
+                    if (paid < 0) {
+
+                        event.preventDefault();
+
+                        alert(
+                            "Paid amount cannot be negative."
+                        );
+
+                        return;
+
+                    }
+
+
+                    if (paid > total) {
+
+                        event.preventDefault();
+
+                        alert(
+                            "Paid amount cannot be greater than the treatment bill total."
+                        );
+
+                        return;
+
+                    }
 
                 }
+            );
 
-
-                const rows =
-                    document.querySelectorAll(
-                        "#treatmentItems tr[data-type]"
-                    );
-
-
-                if (rows.length === 0) {
-
-                    event.preventDefault();
-
-                    alert(
-                        "Please add at least one treatment."
-                    );
-
-                    return;
-
-                }
-
-
-                const total =
-                    parseFloat(
-                        document.getElementById(
-                            "treatmentGrandTotal"
-                        ).textContent
-                    ) || 0;
-
-                const paid =
-                    parseFloat(
-                        document.getElementById(
-                            "treatmentPaidAmount"
-                        ).value
-                    ) || 0;
-
-
-                if (paid < 0) {
-
-                    event.preventDefault();
-
-                    alert(
-                        "Paid amount cannot be negative."
-                    );
-
-                    return;
-
-                }
-
-
-                if (paid > total) {
-
-                    event.preventDefault();
-
-                    alert(
-                        "Paid amount cannot be greater than the treatment bill total."
-                    );
-
-                    return;
-
-                }
-
-            }
-        );
+        }
 
 
         /* =====================================================
            PHARMACY FORM SUBMIT
         ===================================================== */
 
-        document.getElementById(
-            "pharmacyForm"
-        ).addEventListener(
-            "submit",
-            function (event) {
+        const pharmacyForm =
+            document.getElementById(
+                "pharmacyForm"
+            );
 
-                if (
-                    !validatePatient()
-                ) {
 
-                    event.preventDefault();
+        if (pharmacyForm) {
 
-                    return;
+            pharmacyForm.addEventListener(
+                "submit",
+                function (event) {
+
+                    if (
+                        !validatePatient()
+                    ) {
+
+                        event.preventDefault();
+
+                        return;
+
+                    }
+
+
+                    const rows =
+                        document.querySelectorAll(
+                            "#medicineItems tr[data-type]"
+                        );
+
+
+                    if (
+                        rows.length === 0
+                    ) {
+
+                        event.preventDefault();
+
+                        alert(
+                            "Please add at least one medicine."
+                        );
+
+                        return;
+
+                    }
+
+
+                    const total =
+                        parseFloat(
+                            document.getElementById(
+                                "pharmacyGrandTotal"
+                            ).textContent
+                        ) || 0;
+
+
+                    const paid =
+                        parseFloat(
+                            document.getElementById(
+                                "pharmacyPaidAmount"
+                            ).value
+                        ) || 0;
+
+
+                    if (paid < 0) {
+
+                        event.preventDefault();
+
+                        alert(
+                            "Paid amount cannot be negative."
+                        );
+
+                        return;
+
+                    }
+
+
+                    if (paid > total) {
+
+                        event.preventDefault();
+
+                        alert(
+                            "Paid amount cannot be greater than the pharmacy bill total."
+                        );
+
+                        return;
+
+                    }
 
                 }
+            );
 
-
-                const rows =
-                    document.querySelectorAll(
-                        "#medicineItems tr[data-type]"
-                    );
-
-
-                if (rows.length === 0) {
-
-                    event.preventDefault();
-
-                    alert(
-                        "Please add at least one medicine."
-                    );
-
-                    return;
-
-                }
-
-
-                const total =
-                    parseFloat(
-                        document.getElementById(
-                            "pharmacyGrandTotal"
-                        ).textContent
-                    ) || 0;
-
-                const paid =
-                    parseFloat(
-                        document.getElementById(
-                            "pharmacyPaidAmount"
-                        ).value
-                    ) || 0;
-
-
-                if (paid < 0) {
-
-                    event.preventDefault();
-
-                    alert(
-                        "Paid amount cannot be negative."
-                    );
-
-                    return;
-
-                }
-
-
-                if (paid > total) {
-
-                    event.preventDefault();
-
-                    alert(
-                        "Paid amount cannot be greater than the pharmacy bill total."
-                    );
-
-                    return;
-
-                }
-
-            }
-        );
+        }
 
 
         /* =====================================================
@@ -4901,6 +7472,7 @@ document.addEventListener(
         calculatePharmacyTotal();
 
     }
+
 );
 
 </script>
