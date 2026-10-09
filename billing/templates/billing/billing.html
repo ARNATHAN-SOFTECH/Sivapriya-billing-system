@@ -2860,368 +2860,198 @@ textarea.form-control {
             </div>
 
 
-            <div class="card-body">
-
-
-                <!-- =================================================
-                     PATIENT MODE
-                ================================================== -->
-
-                <div class="patient-mode">
-
-
-                    <!-- EXISTING PATIENT -->
-
-                    <label
-                        class="mode-option active"
-                        id="existingMode"
-                    >
-
-                        <input
-                            type="radio"
-                            name="patient_mode"
-                            value="existing"
-                            checked
-                        >
-
-                        <span class="mode-icon">
-                            <i class="fa-solid fa-user-check"></i>
-                        </span>
-
-                        <span>
-
-                            <strong>
-                                Select Existing OP Patient
-                            </strong>
-
-                            <small>
-                                Choose an already registered patient
-                            </small>
-
-                        </span>
-
-                    </label>
-
-
-                    <!-- NEW PATIENT -->
-
-                    <label
-                        class="mode-option"
-                        id="newMode"
-                    >
-
-                        <input
-                            type="radio"
-                            name="patient_mode"
-                            value="new"
-                        >
-
-                        <span class="mode-icon">
-                            <i class="fa-solid fa-user-plus"></i>
-                        </span>
-
-                        <span>
-
-                            <strong>
-                                Add New Patient
-                            </strong>
-
-                            <small>
-                                Enter patient details manually
-                            </small>
-
-                        </span>
-
-                    </label>
-
-                </div>
-
-
-                <!-- =================================================
-                     EXISTING PATIENT
-                ================================================== -->
-
-                <div
-                    id="existingPatientSection"
-                    class="patient-section"
-                >
-
-                    <div class="form-group">
-
-                        <label for="patientSelect">
-
-                            OP Number / Patient
-
-                            <span class="required">
-                                *
-                            </span>
-
-                        </label>
-
-
-                        <select
-                            name="existing_patient"
-                            id="patientSelect"
-                            class="form-control"
-                        >
-
-                            <option value="">
-                                Select OP Number / Patient
-                            </option>
-
-                            {% for patient in patients %}
-
-                                <option
-                                    value="{{ patient.id }}"
-                                >
-
-                                    {{ patient.op_number }}
-                                    -
-                                    {{ patient.name }}
-
-                                    {% if patient.phone %}
-                                        | {{ patient.phone }}
-                                    {% endif %}
-
-                                </option>
-
-                            {% endfor %}
-
-                        </select>
-
-                    </div>
-
-
-                    {% if not patients %}
-
-                        <div class="no-patient-message">
-
-                            <i class="fa-solid fa-circle-info"></i>
-
-                            No registered patients found.
-                            Please use
-                            <strong>Add New Patient</strong>.
-
-                        </div>
-
-                    {% endif %}
-
-                </div>
-
-
-                <!-- =================================================
-                     NEW PATIENT
-                ================================================== -->
-
-                <div
-                    id="newPatientSection"
-                    class="patient-section"
-                    style="display:none;"
-                >
-
-                    <div class="new-patient-grid">
-
-
-                        <!-- NAME -->
-
-                        <div class="form-group">
-
-                            <label for="newPatientName">
-
-                                Patient Name
-
-                                <span class="required">
-                                    *
-                                </span>
-
-                            </label>
-
-                            <input
-                                type="text"
-                                name="new_patient_name"
-                                id="newPatientName"
-                                class="form-control"
-                                placeholder="Enter patient name"
-                            >
-
-                        </div>
-
-
-                        <!-- AGE -->
-
-                        <div class="form-group">
-
-                            <label for="newPatientAge">
-                                Age
-                            </label>
-
-                            <input
-                                type="number"
-                                name="new_patient_age"
-                                id="newPatientAge"
-                                class="form-control"
-                                min="0"
-                                max="120"
-                                placeholder="Age"
-                            >
-
-                        </div>
-
-
-                        <!-- GENDER -->
-
-                        <div class="form-group">
-
-                            <label for="newPatientGender">
-                                Gender
-                            </label>
-
-                            <select
-                                name="new_patient_gender"
-                                id="newPatientGender"
-                                class="form-control"
-                            >
-
-                                <option value="">
-                                    Select Gender
-                                </option>
-
-                                <option value="Male">
-                                    Male
-                                </option>
-
-                                <option value="Female">
-                                    Female
-                                </option>
-
-                                <option value="Other">
-                                    Other
-                                </option>
-
-                            </select>
-
-                        </div>
-
-
-                        <!-- PHONE -->
-
-                        <div class="form-group">
-
-                            <label for="newPatientPhone">
-                                Phone Number
-                            </label>
-
-                            <input
-                                type="tel"
-                                name="new_patient_phone"
-                                id="newPatientPhone"
-                                class="form-control"
-                                placeholder="Enter phone number"
-                            >
-
-                        </div>
-
-
-                        <!-- ADDRESS -->
-
-                        <div class="form-group full-width">
-
-                            <label for="newPatientAddress">
-                                Address
-                            </label>
-
-                            <textarea
-                                name="new_patient_address"
-                                id="newPatientAddress"
-                                class="form-control"
-                                rows="3"
-                                placeholder="Enter patient address"
-                            ></textarea>
-
-                        </div>
-
-                    </div>
-
-
-                </div>
-
-
-                <!-- =================================================
-                     PATIENT INFORMATION
-                ================================================== -->
-
-                <div
-                    class="patient-info"
-                    id="patientInfo"
-                    style="display:none;"
-                >
-
-                    <div class="info-box">
-
-                        <div class="info-label">
-                            OP Number
-                        </div>
-
-                        <div
-                            class="info-value"
-                            id="displayOpNumber"
-                        >
-                            -
-                        </div>
-
-                    </div>
-
-
-                    <div class="info-box">
-
-                        <div class="info-label">
-                            Name
-                        </div>
-
-                        <div
-                            class="info-value"
-                            id="displayName"
-                        >
-                            -
-                        </div>
-
-                    </div>
-
-
-                    <div class="info-box">
-
-                        <div class="info-label">
-                            Age / Gender
-                        </div>
-
-                        <div
-                            class="info-value"
-                            id="displayAgeGender"
-                        >
-                            -
-                        </div>
-
-                    </div>
-
-
-                    <div class="info-box">
-
-                        <div class="info-label">
-                            Phone
-                        </div>
-
-                        <div
-                            class="info-value"
-                            id="displayPhone"
-                        >
-                            -
-                        </div>
-
-                    </div>
-
-                </div>
-
+<div class="card-body">
+
+    <!-- ===== PATIENT MODE ===== -->
+    <div class="patient-mode">
+
+        <label class="mode-option active" id="existingMode">
+            <input type="radio" name="patient_mode" value="existing" checked>
+            <span class="mode-icon"><i class="fa-solid fa-user-check"></i></span>
+            <span>
+                <strong>Select Existing OP Patient</strong>
+                <small>Choose an already registered patient</small>
+            </span>
+        </label>
+
+        <label class="mode-option" id="newMode">
+            <input type="radio" name="patient_mode" value="new">
+            <span class="mode-icon"><i class="fa-solid fa-user-plus"></i></span>
+            <span>
+                <strong>Add New Patient</strong>
+                <small>Enter patient details manually</small>
+            </span>
+        </label>
+
+    </div>
+
+
+    <!-- ===== EXISTING PATIENT ===== -->
+    <div id="existingPatientSection" class="patient-section">
+
+        <div class="form-group">
+            <label for="patientSelect">
+                OP Number / Patient <span class="required">*</span>
+            </label>
+
+            <select name="existing_patient" id="patientSelect" class="form-control">
+                <option value="">Select OP Number / Patient</option>
+                {% for patient in patients %}
+                    <option value="{{ patient.id }}">
+                        {{ patient.op_number }} - {{ patient.name }}
+                        {% if patient.phone %}| {{ patient.phone }}{% endif %}
+                    </option>
+                {% endfor %}
+            </select>
+        </div>
+
+        {% if not patients %}
+            <div class="no-patient-message">
+                <i class="fa-solid fa-circle-info"></i>
+                No registered patients found. Please use <strong>Add New Patient</strong>.
             </div>
+        {% endif %}
+
+    </div>
+
+
+    <!-- ===== NEW PATIENT (registered once, OP No. auto-generated) ===== -->
+    <div id="newPatientSection" class="patient-section" style="display:none;">
+
+        <div class="new-patient-grid">
+
+            <!-- NAME -->
+            <div class="form-group">
+                <label for="newPatientName">
+                    Patient Name <span class="required">*</span>
+                </label>
+                <input type="text" name="new_patient_name" id="newPatientName"
+                       class="form-control" placeholder="e.g. Santhosh S">
+            </div>
+
+            <!-- AGE -->
+            <div class="form-group">
+                <label for="newPatientAge">Age</label>
+                <input type="number" name="new_patient_age" id="newPatientAge"
+                       class="form-control" min="0" max="120" placeholder="Age">
+            </div>
+
+            <!-- GENDER -->
+            <div class="form-group">
+                <label for="newPatientGender">Gender</label>
+                <select name="new_patient_gender" id="newPatientGender" class="form-control">
+                    <option value="">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <!-- PHONE -->
+            <div class="form-group">
+                <label for="newPatientPhone">Phone Number</label>
+                <input type="tel" name="new_patient_phone" id="newPatientPhone"
+                       class="form-control" placeholder="Enter phone number">
+            </div>
+
+            <!-- ADDRESS (house name, place, post office, PIN) -->
+            <div class="form-group full-width">
+                <label for="newPatientAddress">
+                    Address <span class="required">*</span>
+                </label>
+                <textarea name="new_patient_address" id="newPatientAddress"
+                          class="form-control" rows="3"
+                          placeholder="House name, Place, Post Office, PIN"></textarea>
+            </div>
+
+        </div>
+
+        <div class="no-patient-message">
+            <i class="fa-solid fa-circle-info"></i>
+            A new OP number will be generated automatically when this patient is saved.
+        </div>
+
+    </div>
+
+
+    <!-- ===== SELECTED PATIENT INFO (existing mode) ===== -->
+    <div class="patient-info" id="patientInfo" style="display:none;">
+
+        <div class="info-box">
+            <div class="info-label">O.P. No</div>
+            <div class="info-value" id="displayOpNumber">-</div>
+        </div>
+
+        <div class="info-box">
+            <div class="info-label">Name</div>
+            <div class="info-value" id="displayName">-</div>
+        </div>
+
+        <div class="info-box">
+            <div class="info-label">Age / Gender</div>
+            <div class="info-value" id="displayAgeGender">-</div>
+        </div>
+
+        <div class="info-box">
+            <div class="info-label">Phone</div>
+            <div class="info-value" id="displayPhone">-</div>
+        </div>
+
+        <div class="info-box">
+            <div class="info-label">Address</div>
+            <div class="info-value" id="displayAddress">-</div>
+        </div>
+
+    </div>
+
+
+    <!-- ===== ADMISSION DETAILS (per bill, shown for BOTH modes) ===== -->
+    <div class="patient-section" id="admissionSection">
+
+        <h4 class="section-subtitle">Admission Details</h4>
+
+        <div class="new-patient-grid">
+
+            <!-- IP NO -->
+            <div class="form-group">
+                <label for="ipNumber">I.P. No</label>
+                <input type="text" name="ip_number" id="ipNumber"
+                       class="form-control" placeholder="e.g. 15108">
+            </div>
+
+            <!-- ROOM NO -->
+            <div class="form-group">
+                <label for="roomNumber">Room No</label>
+                <input type="text" name="room_number" id="roomNumber"
+                       class="form-control" placeholder="e.g. 205">
+            </div>
+
+            <!-- DOA -->
+            <div class="form-group">
+                <label for="admissionDate">Date of Admission (DOA)</label>
+                <input type="date" name="admission_date" id="admissionDate"
+                       class="form-control">
+            </div>
+
+            <!-- DOD -->
+            <div class="form-group">
+                <label for="dischargeDate">Date of Discharge (DOD)</label>
+                <input type="date" name="discharge_date" id="dischargeDate"
+                       class="form-control">
+            </div>
+
+            <!-- CONSULTING DOCTOR -->
+            <div class="form-group full-width">
+                <label for="consultingDoctor">Consulting Doctor</label>
+                <input type="text" name="consulting_doctor" id="consultingDoctor"
+                       class="form-control" placeholder="e.g. Dr. K.V. Sabu">
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
 
         </div>
 
